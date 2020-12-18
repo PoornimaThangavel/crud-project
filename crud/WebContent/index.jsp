@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+    <fieldset>
+       <legend>Registration Form</legend>
+       <form action="save" method="POST">
+           Name : <input type="text" name="name"><br> 
+           Email : <input type="email" name="email"><br> 
+           Password : <input type="password" name="pass"><br>
+           Country : <select name="country">
+                         <option value="india">India</option>
+                         <option value="canada">Canada</option>
+                         <option value="Cuba">Cuba</option>
+                     </select> <br>
+           <input type="submit" value="submit">
+       </form>
+    </fieldset>
+    
+    <hr>
+    <h3><a href="view.jsp">View Students</a></h3>
+    
+    <fieldset>
+      <legend>Update Record</legend>
+       <form action="update" method="POST">
+           Name : <input type="text" name="name1"><br> 
+           Email : <input type="email" name="email1"><br>
+           
+            <input type="submit" value="submit">
+       </form>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Delete Record</legend>
+       <form action="delete" method="POST">
+           Name : <input type="text" name="name2"><br> 
+                    
+            <input type="submit" value="submit">
+       </form>
+    </fieldset>
+</body>
+</html>
